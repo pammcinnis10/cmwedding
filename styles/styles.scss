@@ -1,0 +1,243 @@
+@import "normalize";
+
+
+// $primary-color: #b5d4ee;
+$primary-color: #9de1fa;
+$light-blue: #89cbea;
+$light-pink: #f7e0d4;
+$main-font: #41494b;
+$disney: 'Waltograph';
+$disney2: 'Mouse Memoirs', sans-serif;
+
+// font-family: 'Playfair Display', serif;
+// font-family: 'Nunito', sans-serif;
+// font-family: 'Rochester', cursive;
+// font-family: 'Cinzel Decorative', cursive;
+
+// ----------------------BASE STYLES-----------------------
+html {
+	font-size: 62.5%;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    font-family: $disney;
+    font-size: 5rem;
+    color: $main-font;
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+}
+
+p {
+    font-family: 'Nunito';
+    color: $main-font;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    margin: 0;
+}
+
+// -----------------------HERO------------------------------
+.hero {    
+    background-image: url('/assets/cm-steamwhistle-L.jpg');
+    height: 100vh;  
+    background-size: 100%;
+    background-repeat: none;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+// -----------------------NAVIGATION BAR----------------------
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    width: 100vw;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid $primary-color;
+    color: white;
+}
+
+h1 {
+    font-size: 6rem;
+    font-family: 'Rochester';
+    width: 40%;
+    margin-left: 100px;
+    opacity: .8;
+    margin-top: 15px;
+}
+
+.menu {
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 60%;
+        margin: 0;
+        margin-right: 100px;
+        li {
+            font-family: 'Nunito', sans-serif;
+            font-size: 2rem;
+            opacity: .8;
+            list-style: none;
+            margin: 0;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            cursor: pointer;
+            letter-spacing: 2px;
+        }
+    } 
+}
+
+li:hover {
+    color: $primary-color;
+    transition: all .1s ease-in;
+}
+
+ul .rsvp-nav-button {
+    border: 2px solid white;
+}
+
+.rsvp-nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all .1s ease-in;
+    
+}
+
+
+// ------------------------BACKGROUND IMAGES----------------------
+.image1 {
+    background-image: url('/assets/cm-cityview-L.jpg');
+}
+
+.image2, .image4 {
+    background-image: url('/assets/cm-blackandwhite-L.jpg')
+}
+
+.image3 {
+    background-image: url('/assets/cm_arcade_L.jpg')
+}
+
+
+.background-image {
+    display: block;
+    height:550px;
+    width:100%;
+    background-attachment: fixed;    
+    background-size:100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+// -------------------BASE STYLES FOR SECTIONS------------------
+
+.section {
+    height: 500px;
+    width: 100vw;
+    background-color: $primary-color;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.info-box {
+    width: 550px;
+    height: 400px;
+    background-color: rgba(247, 250, 255, 0.75);
+    margin: 50px;
+    // border-radius: 50%;
+}
+
+// ---------------------OUR STORY----------------------------
+
+.story-pic {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    img {
+        width: 200%;
+        object-fit: cover;
+    }
+}
+
+.story-box {
+    display: flex;
+    flex-direction: column;
+    p {
+        font-size: 1.5rem;
+        line-height: 20px;
+        padding-top: 10px;
+    }
+}
+
+// ----------------------RSVP--------------------------------
+
+
+// ----------------------LOCATION----------------------------
+
+.location {
+    p {
+        font-size: 2.5rem;
+        line-height: 40px;
+        i {
+            font-size: 3.5rem;
+            color: $main-font;
+            line-height: 50px;
+        }
+        i:hover {
+            color: rgba(65,73,75,0.5);
+            cursor: pointer;
+        }
+        button {
+            color: $main-font;
+        }
+        button:hover {
+            background-color: $primary-color;
+            cursor: pointer;
+        }
+    }
+}
+
+// ----------------------REGISTRY----------------------------
+
+.registry-box {
+    p {
+        font-size: 2.5rem;
+        line-height: 50px;
+        padding-top: 10px;  
+    }
+}
+
+// -----------------------GALLERY-----------------------------
+
+.gallery {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+
