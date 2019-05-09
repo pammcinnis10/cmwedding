@@ -96,7 +96,7 @@ h2 { font-family: "Waltograph"; font-size: 5rem; color: #41494b; text-align: cen
 
 p { font-family: 'Nunito'; color: #41494b; padding-left: 50px; padding-right: 50px; text-align: center; margin: 0; }
 
-.hero { background-image: url("../assets/cm-steamwhistle-L.jpg"); height: 100vh; background-size: 100%; background-repeat: none; background-attachment: fixed; background-repeat: no-repeat; position: relative; }
+.hero { background-image: url("../assets/background/cm-steamwhistle-L.jpg"); height: 100vh; background-size: 100%; background-repeat: none; background-attachment: fixed; background-repeat: no-repeat; position: relative; }
 
 .nav { position: absolute; top: 0; left: 0; right: 0; display: -webkit-box; display: -ms-flexbox; display: flex; width: 100vw; height: 90px; background-color: rgba(0, 0, 0, 0.2); border-bottom: 1px solid #9de1fa; color: white; }
 
@@ -114,11 +114,11 @@ ul .rsvp-nav-button { border: 2px solid white; }
 
 .rsvp-nav-button:hover { background-color: rgba(255, 255, 255, 0.3); -webkit-transition: all .1s ease-in; transition: all .1s ease-in; }
 
-.image1 { background-image: url("../assets/cm-cityview-L.jpg"); }
+.image1 { background-image: url("../assets/background/cm-cityview-L.jpg"); }
 
-.image2, .image4 { background-image: url("../assets/cm-blackandwhite-L.jpg"); }
+.image2, .image4 { background-image: url("../assets/background/cm-blackandwhite-L.jpg"); }
 
-.image3 { background-image: url("../assets/cm_arcade_L.jpg"); }
+.image3 { background-image: url("../assets/background/cm_arcade_L.jpg"); }
 
 .background-image { display: block; height: 550px; width: 100%; background-attachment: fixed; background-size: 100%; overflow: hidden; background-repeat: no-repeat; background-position: top; }
 
