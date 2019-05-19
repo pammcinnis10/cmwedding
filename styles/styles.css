@@ -92,27 +92,29 @@ html { font-size: 62.5%; }
 
 img { width: 100%; }
 
-h2 { font-family: "Waltograph"; font-size: 5rem; color: #41494b; text-align: center; margin: 0; padding-top: 10px; }
+h1 { font-family: "Waltograph", cursive; color: white; font-size: 8rem; width: 40%; margin: 20px; opacity: .9; }
 
-p { font-family: 'Nunito'; color: #41494b; padding-left: 50px; padding-right: 50px; text-align: center; margin: 0; }
+h2 { color: #003366; font-family: 'Montserrat', sans-serif; }
+
+p { font-family: 'Montserrat', sans-serif; }
 
 .hero { background-image: url("../assets/background/cm-steamwhistle-L.jpg"); height: 100vh; background-size: 100%; background-repeat: none; background-attachment: fixed; background-repeat: no-repeat; position: relative; }
 
-.nav { position: absolute; top: 0; left: 0; right: 0; display: -webkit-box; display: -ms-flexbox; display: flex; width: 100vw; height: 90px; background-color: rgba(0, 0, 0, 0.2); border-bottom: 1px solid #9de1fa; color: white; }
-
-h1 { font-size: 6rem; font-family: 'Rochester'; width: 40%; margin-left: 100px; opacity: .8; margin-top: 15px; }
+.nav { position: absolute; top: 0; left: 0; right: 0; display: -webkit-box; display: -ms-flexbox; display: flex; width: 100vw; height: 90px; background-color: rgba(0, 0, 0, 0.2); border-bottom: 1px solid #9de1fa; }
 
 .menu { width: 75%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; margin: 0; }
 
-.menu ul { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 60%; margin: 0; margin-right: 100px; }
+.menu ul { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 60%; margin: 0; margin-right: 100px; list-style: none; }
 
-.menu ul li { font-family: 'Nunito', sans-serif; font-size: 2rem; opacity: .8; list-style: none; margin: 0; padding-right: 20px; padding-left: 20px; padding-top: 10px; padding-bottom: 10px; cursor: pointer; letter-spacing: 2px; }
+.menu ul li a { font-family: "Nunito", sans-serif; font-size: 2rem; color: white; opacity: .8; list-style: none; margin: 0; padding-right: 20px; padding-left: 20px; padding-top: 10px; padding-bottom: 10px; cursor: pointer; letter-spacing: 2px; text-decoration: none; }
 
-li:hover { color: #9de1fa; -webkit-transition: all .1s ease-in; transition: all .1s ease-in; }
+.menu ul li a:hover { color: #003366; -webkit-transition: all .1s ease-in; transition: all .1s ease-in; }
 
-ul .rsvp-nav-button { border: 2px solid white; }
+ul .rsvp-nav-button { border: 2px solid white; padding-top: 15px; padding-bottom: 15px; }
 
 .rsvp-nav-button:hover { background-color: rgba(255, 255, 255, 0.3); -webkit-transition: all .1s ease-in; transition: all .1s ease-in; }
+
+.date { color: #003366; position: absolute; top: 98px; left: 230px; font-size: 3rem; font-weight: bold; margin: 0; font-family: 'Merienda', cursive; }
 
 .image1 { background-image: url("../assets/background/cm-cityview-L.jpg"); }
 
@@ -126,7 +128,23 @@ ul .rsvp-nav-button { border: 2px solid white; }
 
 .info { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.info-box { width: 550px; height: 400px; background-color: rgba(247, 250, 255, 0.75); margin: 50px; }
+.info-box { width: 550px; height: 400px; background-color: rgba(247, 250, 255, 0.75); margin: 50px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.info-box p { padding-left: 50px; padding-right: 50px; text-align: center; margin: 0; color: #003366; letter-spacing: 2px; }
+
+.info-box h2 { text-align: center; margin: 0; font-size: 3rem; padding-top: 7px; letter-spacing: 5px; font-weight: 700; }
+
+.info-box .be-our-guest { font-family: "Waltograph", cursive; font-size: 7rem; }
+
+.gallery-h2 { text-align: center; margin: 0; font-size: 3rem; padding-top: 7px; letter-spacing: 6px; font-weight: 700; }
+
+.info-date { font-family: 'Montserrat', sans-serif; font-weight: bold; letter-spacing: 2px; }
+
+.move-down { padding-top: 10px; }
+
+.inner-info-box { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.inner-info-box p { font-size: 2rem; line-height: 40px; }
 
 .story-pic { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; overflow: hidden; }
 
@@ -134,17 +152,19 @@ ul .rsvp-nav-button { border: 2px solid white; }
 
 .story-box { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 
-.story-box p { font-size: 1.5rem; line-height: 20px; padding-top: 10px; }
+.story-box p { font-size: 1.3rem; line-height: 20px; padding-top: 10px; letter-spacing: 1px; }
 
-.location p { font-size: 2.5rem; line-height: 40px; }
+.venue i { font-size: 3.5rem; color: #003366; line-height: 50px; padding-top: 7px; }
 
-.location p i { font-size: 3.5rem; color: #41494b; line-height: 50px; }
+.venue i:hover { color: rgba(65, 73, 75, 0.5); cursor: pointer; }
 
-.location p i:hover { color: rgba(65, 73, 75, 0.5); cursor: pointer; }
+.hotel button { color: #003366; }
 
-.location p button { color: #41494b; }
+.hotel button:hover { background-color: #9de1fa; cursor: pointer; }
 
-.location p button:hover { background-color: #9de1fa; cursor: pointer; }
+.book-here { background-color: rgba(247, 250, 255, 0.75); border: 2px solid white; margin: 25px; padding-top: 15px; padding-bottom: 15px; }
+
+.book-here:hover { -webkit-transition: all .3s ease-in-out; transition: all .3s ease-in-out; background-color: none; }
 
 .registry-box p { font-size: 2.5rem; line-height: 50px; padding-top: 10px; }
 

@@ -1,16 +1,15 @@
 @import "normalize";
 
 
-// $primary-color: #b5d4ee;
 $primary-color: #9de1fa;
 $light-blue: #89cbea;
 $light-pink: #f7e0d4;
-$main-font: #41494b;
-$disney: 'Waltograph';
+$main-font-color: #003366;
+$disney: 'Waltograph', cursive;
 $disney2: 'Mouse Memoirs', sans-serif;
 
 // font-family: 'Playfair Display', serif;
-// font-family: 'Nunito', sans-serif;
+$nunito: 'Nunito', sans-serif;
 // font-family: 'Rochester', cursive;
 // font-family: 'Cinzel Decorative', cursive;
 
@@ -23,22 +22,24 @@ img {
     width: 100%;
 }
 
-h2 {
+//  ------------- BASE TEXT STYLE --------------
+
+h1 {
     font-family: $disney;
-    font-size: 5rem;
-    color: $main-font;
-    text-align: center;
-    margin: 0;
-    padding-top: 10px;
+    color: white;
+    font-size: 8rem;
+    width: 40%;
+    margin: 20px;
+    opacity: .9;
+}
+
+h2 {
+    color: $main-font-color;
+    font-family: 'Montserrat', sans-serif;
 }
 
 p {
-    font-family: 'Nunito';
-    color: $main-font;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: center;
-    margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 // -----------------------HERO------------------------------
@@ -65,17 +66,8 @@ p {
     height: 90px;
     background-color: rgba(0, 0, 0, 0.2);
     border-bottom: 1px solid $primary-color;
-    color: white;
 }
 
-h1 {
-    font-size: 6rem;
-    font-family: 'Rochester';
-    width: 40%;
-    margin-left: 100px;
-    opacity: .8;
-    margin-top: 15px;
-}
 
 .menu {
     width: 75%;
@@ -89,9 +81,11 @@ h1 {
         width: 60%;
         margin: 0;
         margin-right: 100px;
-        li {
-            font-family: 'Nunito', sans-serif;
+        list-style: none;
+        li a {
+            font-family: $nunito;
             font-size: 2rem;
+            color: white;
             opacity: .8;
             list-style: none;
             margin: 0;
@@ -101,23 +95,37 @@ h1 {
             padding-bottom: 10px;
             cursor: pointer;
             letter-spacing: 2px;
+            text-decoration: none;
+            &:hover {
+                color: #003366;
+                transition: all .1s ease-in;
+            }
         }
     } 
 }
 
-li:hover {
-    color: $primary-color;
-    transition: all .1s ease-in;
-}
 
 ul .rsvp-nav-button {
     border: 2px solid white;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .rsvp-nav-button:hover {
     background-color: rgba(255, 255, 255, 0.3);
     transition: all .1s ease-in;
     
+}
+
+.date {
+    color: #003366;
+    position: absolute;
+    top: 98px;
+    left: 230px;
+    font-size: 3rem;
+    font-weight: bold; 
+    margin: 0;
+    font-family: 'Merienda', cursive;
 }
 
 
@@ -146,7 +154,8 @@ ul .rsvp-nav-button {
     background-position: top;
 }
 
-// -------------------BASE STYLES FOR SECTIONS------------------
+// -------------------INFO-BOX SECTIONS------------------
+
 
 .section {
     height: 500px;
@@ -165,8 +174,59 @@ ul .rsvp-nav-button {
     height: 400px;
     background-color: rgba(247, 250, 255, 0.75);
     margin: 50px;
-    // border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    p {
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: center;
+        margin: 0;
+        color: $main-font-color;
+        letter-spacing: 2px;
+        }
+    h2 {
+        text-align: center;
+        margin: 0;
+        font-size: 3rem;
+        padding-top: 7px;
+        letter-spacing: 5px;
+        font-weight: 700;
+        }
+    .be-our-guest {
+        font-family: $disney;
+        font-size: 7rem;
+    }
 }
+
+.gallery-h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 3rem;
+    padding-top: 7px;
+    letter-spacing: 6px;
+    font-weight: 700;   
+}
+
+.info-date {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.move-down {
+    padding-top: 10px;
+}
+
+.inner-info-box {
+    justify-content: center;
+    align-items: center;
+    p {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+}
+
 
 // ---------------------OUR STORY----------------------------
 
@@ -184,39 +244,58 @@ ul .rsvp-nav-button {
     display: flex;
     flex-direction: column;
     p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         line-height: 20px;
         padding-top: 10px;
+        letter-spacing: 1px;
     }
 }
 
 // ----------------------RSVP--------------------------------
 
 
-// ----------------------LOCATION----------------------------
 
-.location {
-    p {
-        font-size: 2.5rem;
-        line-height: 40px;
-        i {
-            font-size: 3.5rem;
-            color: $main-font;
-            line-height: 50px;
-        }
-        i:hover {
-            color: rgba(65,73,75,0.5);
-            cursor: pointer;
-        }
+// ----------------------VENUE----------------------------
+
+
+.venue {
+    i {
+        font-size: 3.5rem;
+        color: $main-font-color;
+        line-height: 50px;
+        padding-top: 7px;
+    }
+    i:hover {
+        color: rgba(65,73,75,0.5);
+        cursor: pointer;
+    }
+}
+
+
+// ----------------------HOTEL----------------------------
+
+.hotel {
         button {
-            color: $main-font;
+            color: $main-font-color;
         }
         button:hover {
             background-color: $primary-color;
             cursor: pointer;
         }
+}
+
+.book-here {
+    background-color: rgba(247, 250, 255, 0.75);
+    border: 2px solid white;
+    margin: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    &:hover {
+        transition: all .3s ease-in-out;
+        background-color: none;
     }
 }
+
 
 // ----------------------REGISTRY----------------------------
 
