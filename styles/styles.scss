@@ -28,9 +28,12 @@ h1 {
     font-family: $disney;
     color: white;
     font-size: 8rem;
-    width: 40%;
+    width: 50%;
     margin: 20px;
     opacity: .9;
+    letter-spacing: 3px;
+    align-self: center;
+    padding-top: 25px;
 }
 
 h2 {
@@ -125,21 +128,30 @@ ul .rsvp-nav-button {
     font-size: 3rem;
     font-weight: bold; 
     margin: 0;
-    font-family: 'Merienda', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
 // ------------------------BACKGROUND IMAGES----------------------
 .image1 {
-    background-image: url('../assets/background/cm-cityview-L.jpg');
+    background-image: url('../assets/background/cm_cityview_L.jpg');
 }
 
-.image2, .image4 {
-    background-image: url('../assets/background/cm-blackandwhite-L.jpg')
+.image2 {
+    background-image: url('../assets/background/cm_blackandwhite_L.jpg')
 }
 
 .image3 {
     background-image: url('../assets/background/cm_arcade_L.jpg')
+}
+
+.image4 {
+    background-image: url('../assets/background/cm_train_L.jpg')
+}
+
+.image5 {
+    background-image: url('../assets/background/cm_patio_L.jpg');
+    background-color: $light-blue;
 }
 
 
@@ -189,14 +201,34 @@ ul .rsvp-nav-button {
         text-align: center;
         margin: 0;
         font-size: 3rem;
-        padding-top: 7px;
-        letter-spacing: 5px;
+        padding-top: 25px;
+        letter-spacing: 4px;
         font-weight: 700;
         }
     .be-our-guest {
         font-family: $disney;
         font-size: 7rem;
     }
+}
+
+.inner-info-box {
+    p {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .info-date {
+        font-size: 2.3rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    .transportation {
+        padding-top: 25px;
+    }
+}
+
+.registry-header {
+    padding-top: 25px;
 }
 
 .gallery-h2 {
@@ -208,24 +240,11 @@ ul .rsvp-nav-button {
     font-weight: 700;   
 }
 
-.info-date {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
 .move-down {
     padding-top: 10px;
 }
 
-.inner-info-box {
-    justify-content: center;
-    align-items: center;
-    p {
-        font-size: 2rem;
-        line-height: 40px;
-    }
-}
+
 
 
 // ---------------------OUR STORY----------------------------
@@ -233,6 +252,7 @@ ul .rsvp-nav-button {
 .story-pic {
     display: flex;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
     img {
         width: 200%;
@@ -274,7 +294,7 @@ ul .rsvp-nav-button {
 
 // ----------------------HOTEL----------------------------
 
-.hotel {
+.hotel, .registry{
         button {
             color: $main-font-color;
         }
@@ -285,13 +305,13 @@ ul .rsvp-nav-button {
 }
 
 .book-here {
-    background-color: rgba(247, 250, 255, 0.75);
-    border: 2px solid white;
+    background-color: #f7faffbf;
+    border: none;
     margin: 25px;
     padding-top: 15px;
     padding-bottom: 15px;
     &:hover {
-        transition: all .3s ease-in-out;
+        transition: all .2s ease-in-out;
         background-color: none;
     }
 }
@@ -314,7 +334,6 @@ ul .rsvp-nav-button {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 

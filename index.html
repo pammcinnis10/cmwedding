@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link href="https://fonts.googleapis.com/css?family=Mouse+Memoirs|Cinzel+Decorative|Nunito|Playfair+Display|Rochester|Josefin+Sans:400,700|Montserrat:400,700|Merienda:400,700|Open+Sans+Condensed:300" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
@@ -17,21 +18,22 @@
     </div>
     
     <div class="nav">
-        <h1>Catherine & Mike</h1>
+        <h1>Mike & Catherine</h1>
         
         <div class="menu">
             <ul>
                 <li class="rsvp-nav-button"><a href="#rsvp">RSVP</a></li>
                 <li><a href="#venue">VENUE</a></li>
+                <li><a href="#story">STORY</a></li>
                 <li><a href="#hotel">HOTEL</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#hotel">REGISTRY</a></li>
             </ul>
         </div>
     </div>
 
     <p class="date">AUGUST 17, 2019</p>
     
-    <div class="section info venue">
+    <div class="section info venue" id="venue">
         <div class="info-box venue-box">
             <h2 class="be-our-guest">Be Our Guest!</h2>
             <div class="inner-info-box">
@@ -43,12 +45,12 @@
                 <p><a href="https://goo.gl/maps/3mRCT8Dj6FB2" target="_blank"><i class="fas fa-map-marker-alt"></i></a></p>
             </div>    
             <div class="back-to-top">
-                <button class="to-top">Back to top</button>
+                <!-- <button class="to-top">Back to top</button> -->
             </div>
         </div>
     </div>
 
-    <div class="background-image image2"></div>
+    <div class="background-image image1"></div>
 
 
     <div id="rsvp" class="section info rsvp">
@@ -61,7 +63,7 @@
     <div class="background-image image2">
     </div>
 
-    <div class="section info story">
+    <div class="section info story" id="story">
         <div class="info-box story-box">
             <h2>OUR STORY</h2>
             <div class="inner-info-box">
@@ -70,7 +72,7 @@
                 </p>
             </div>
             <div class="back-to-top">
-                <p class="to-top">Back to top</p>
+                <!-- <p class="to-top">Back to top</p> -->
             </div>
         </div>
         <div class="info-box story-pic">
@@ -78,64 +80,56 @@
         </div>
     </div>
 
-    <div class="background-image image1">
+    <div class="background-image image3">
     </div>
 
     
-    <div class="section info hotel">
+    <div class="section info hotel" id="hotel">
             <div class="info-box hotel-box">
                 <h2>HOTEL</h2>
                 <div class="inner-info-box">
                     <p>Hilton Garden Inn Toronto/Oakville</p>
                     <p>2774 South Sheridan Way</p>
                     <p>Oakville, Ontario</p>
-                    <p><a href="https://hiltongardeninn3.hilton.com/en/hotels/ontario/hilton-garden-inn-toronto-oakville-YTOTVGI/index.html?SEO_id=GMB-HI-YTOTVGI" target="_blank"><button class="book-here">BOOK HERE</button></a></p>   
+                    <p><a href="https://hiltongardeninn3.hilton.com/en/hotels/ontario/hilton-garden-inn-toronto-oakville-YTOTVGI/index.html?SEO_id=GMB-HI-YTOTVGI" target="_blank"><button class="book-here">Book Here!</button></a></p>   
                     <p class="group-code">Use the Group Code: <strong>WRE</strong></p>
                 </div>
                 <div class="back-to-top">
-                    <p class="to-top">Back to top</p>
+                    <!-- <p class="to-top">Back to top</p> -->
                 </div>
             </div>
-            <div class="info-box hotel-box">
-                <h2>TRANSPORTATION</h2>
+            <div class="info-box">
                 <div class="inner-info-box">
-                    <p class="transportation">A bus be provided to take guests to and from the venue - check back for details</p> 
+                    <h2>TRANSPORTATION</h2>
+                        <p class="transportation">A bus will transport guests between the Hilton and the Venue. Check back for details</p>
+                    <h2 class="registry-header">REGISTRY</h2>
+                        <p><a href="https://registry.thebay.com/registry/view-registry/mikeandcatherine2019" target="_blank"><button class="book-here">Visit Registry @ Hudson's Bay</button></a></p>
                 </div>
                 <div class="back-to-top">
-                    <p class="to-top">Back to top</p>
+                    <!-- <p class="to-top">Back to top</p> -->
                 </div>
             </div>
         </div>
 
-    <div class="background-image image3">
+    <!-- <div class="background-image image4">
+    </div> -->
+
+    <div class="background-image image5">
     </div>
 
-    <div class="section info registry">
-        <div class="info-box registry-box">
-            <h2>REGISTRY</h2>
-            <div class="inner-info-box">
-                <p>Registered at the Bay</p>
-                <p>Some details</p>
-                <p>Some more details</p>
-            </div>
-            <div class="back-to-top">
-                <p class="to-top">Back to top</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="background-image image4">
-    </div>
-
-    <div class="section gallery">
-        <h2 class="gallery-h2">Gallery</h2>
+    <!-- <div class="section gallery">
+        <h2 class="gallery-h2">GALLERY</h2>
         <div class="back-to-top">
-            <p class="to-top">Back to top</p>
-        </div>
-    </div>
+            <!-- <p class="to-top">Back to top</p> -->
+        <!-- </div>
+    </div> -->
+
+
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="script.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+	<!-- <script src="script.js"></script> -->
 
 </body>
 </html>
